@@ -444,6 +444,12 @@ p.data {
     padding-bottom: 50px;
 }
 
+.transmit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .form_title {
     position: relative;
     margin-top: 80px;
@@ -472,8 +478,6 @@ p.data {
     width: 80%;
     display: flex;
     justify-content: space-between;
-    margin-left: 50%;
-    transform: translateX(-50%);
 }
 
 .input {
@@ -498,8 +502,6 @@ p.data {
     border: 1px solid #e6e3e3;
     margin-bottom: 20px;
     color: white;
-    margin-left: 50%;
-    transform: translateX(-50%);
 }
 
 .submit {
@@ -509,8 +511,6 @@ p.data {
     color: white;
     text-align: center;
     border: none;
-    margin-left: 50%;
-    transform: translateX(-50%);
 }
 
 .map {
