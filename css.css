@@ -10,6 +10,10 @@ body {
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .wrapper {
     width: 100%;
 }
@@ -20,7 +24,6 @@ header {
     background-position: center;
     background-size: cover;
     height: 100vh;
-
 }
 
 .inner {
@@ -35,6 +38,10 @@ header {
     margin-right: 30px;
     padding: 10px 10px 20px 10px;
     position: relative;
+}
+
+.head .fa-bars {
+    display: none;
 }
 
 .head__link:after {

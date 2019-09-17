@@ -1,0 +1,30 @@
+@media screen and (max-width: 540px) {
+    .inner {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .slogan {
+        font-size: 20px;
+    }
+
+    .col {
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+
+    .col:last-child {
+        margin-right: 0;
+    }
+
+    .col:first-child {
+        margin-left: 0;
+    }
+
+    .columns img {
+        height: 100%;
+    }
+}
