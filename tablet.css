@@ -49,7 +49,7 @@
 
     .note {
         flex-direction: column;
-        padding: 70px 0 80px;
+        padding: 70px 15px 80px;
     }
 
     .note_item {
