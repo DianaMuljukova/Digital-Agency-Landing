@@ -27,4 +27,8 @@
     .columns img {
         height: 100%;
     }
+
+    .content_text {
+        padding: 10px;
+    }
 }

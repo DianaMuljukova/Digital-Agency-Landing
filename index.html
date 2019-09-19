@@ -20,7 +20,14 @@
                 <img src="img/logo/logo.jpg" alt="Логотип">
             </div>
             <i class="fas fa-bars"></i>
-            <nav>
+            <nav class="big-screen-nav">
+                <a href="#" class="head__link">Home</a>
+                <a href="#" class="head__link">Pages</a>
+                <a href="#" class="head__link">Features</a>
+                <a href="#" class="head__link">Extensions</a>
+            </nav>
+            <nav class="hidden-nav">
+                <i class="fas fa-times"></i>
                 <a href="#" class="head__link">Home</a>
                 <a href="#" class="head__link">Pages</a>
                 <a href="#" class="head__link">Features</a>
@@ -324,23 +331,22 @@
 </div>
 
 <script>
-    const nav = document.querySelector('.head nav');
-    let head = document.querySelector('.head');
-    let clicked = false;
-    document.querySelector('.head .fa-bars').onclick = function () {
-        if (clicked == false) {
-            if (window.innerWidth <= 540) {
-                nav.style.flexDirection = 'column';
-                head.style.alignItems = 'normal';
-            }
-            nav.style.display = 'flex';
-            clicked = true;
-        } else {
-            nav.style.display = 'none';
-            head.style.alignItems = 'center';
-            clicked = false;
-        }
+    const nav = document.querySelector('.hidden-nav');
+    let bar = document.querySelector('.head .fa-bars');
+    let exit = document.querySelector('.hidden-nav .fa-times')
+
+    bar.onclick = function () {
+            nav.style.opacity = '1';
+            nav.style.zIndex = '30';
+            bar.style.opacity = '0';
+    };
+    exit.onclick = function () {
+        nav.style.opacity = '0';
+        nav.style.zIndex = '0';
+        bar.style.opacity = '1';
     }
+
+
 </script>
 </body>
 </html>

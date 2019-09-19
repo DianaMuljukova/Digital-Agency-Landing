@@ -3,11 +3,11 @@
         width: 100%;
     }
 
-    .head nav {
+    .big-screen-nav {
         display: none;
     }
 
-    .head nav a {
+    .big-screen-nav a {
         margin-right: 0;
     }
 
@@ -16,6 +16,7 @@
         color: white;
         margin-right: auto;
         cursor: pointer;
+        z-index: 100;
     }
 
     .social {
@@ -42,9 +43,27 @@
         width: 100%;
     }
 
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .columns {
+        flex-wrap: wrap;
+    }
+
     .columns img {
         width: 100%;
         height: 190px;
+    }
+
+    .column p {
+        display: block;
+        display: -webkit-box;
+        max-width: 200px;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .note {
@@ -60,6 +79,9 @@
         width: 100%;
     }
 
+    .items {
+        flex-wrap: wrap;
+    }
 
     .items .team_item {
         margin-right: 3px;
