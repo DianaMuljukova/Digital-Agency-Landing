@@ -47,8 +47,18 @@
         flex-wrap: wrap;
     }
 
+    .col {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+
     .columns {
         flex-wrap: wrap;
+    }
+
+    .column {
+        width: 40%;
+        margin-bottom: 20px;
     }
 
     .columns img {
@@ -59,8 +69,7 @@
     .column p {
         display: block;
         display: -webkit-box;
-        max-width: 200px;
-        -webkit-line-clamp: 5;
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
